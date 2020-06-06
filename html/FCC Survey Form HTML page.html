@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <h1 id="title">Musical Tastes of the Masses</h1> 
+    <p  id="description">A simple survey to determine what people listen to nowadays. 
+        We want to hear what YOU think!
+    </p>
+    <link rel="stylesheet" href="./../CSS/Styles.css">
+</header>
+<body>
+    <form id="survey-form">
+        <!-- This section contains name, email, and age inputs where a user could enter generic contact information. Each label and element(label and input) are placed the <div class="survey-form" for easier styling -->
+        <div class="form-group">
+        <label for="name" id="name-label">Name</label> 
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label"> Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required> 
+
+        <label for="age" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Age" min="18" max="150" required>
+        </div>
+
+        <!-- This section contains the radio buttions with a name group of "user-taste" -->
+        <div class="form-group">
+            <p>What's your favorite way to listen to music?</p>
+            <input type="radio" id="Mp3" value="Mp3-file" name="user-taste">
+            <label for="mp3-file">Mp3-file</label>
+
+            <input type="radio" id="CD" value="CD" name="user-taste">
+            <label for="CD">CD</label>
+
+            <input type="radio" id="radio" value="On-the-radio" name="user-taste">
+            <label for="radio">On the Radio</label>
+
+            <input type="radio" id="vinyl-records" value="vinyl-records" name="user-taste">
+            <label for="vinyl-records">Vinyl Records</label>
+
+            <input type="radio" id="live-concert" value="live-concert" name="user-taste">
+            <label for="in-concert">Live Concert</label>
+
+            <input type="radio" id="internet-streaming" value="internet-streaming" name="user-taste">
+            <label for="internet-streaming">Internet-Streaming (Spotify, Apple Music,etc.)</label>
+        </div>
+
+        <!-- This section containst the drop down menu-->
+        <div class="form-group1">
+     
+            <label for="music-instrument">What's your favorite musical instrument?</label>
+             <select id="dropdown">  
+                <option value="piano">Piano</option>
+                <option value="electric-gutiar">Electric-Gutiar</option>
+                <option value="accustic-gutiar">Acoustic Guitar</option>
+                <option value="bass-gutiar">Bass Gutiar</option>
+                <option value="drums">Drums</option>
+                <option value="violin">Violin</option>
+                <option value="trumpet">Trumpet</option>
+                <option value="saxophone">Saxophone</option>
+                <option value="ukulele">Ukulele</option>
+             </select> 
+        </div> 
+        
+        <!-- This section will contain the checkboxes that corespond to musical genre-->
+        <div class="form-group">
+            <p> Select the types of music that you listen to on a regular basis</p>
+            <input type="checkbox" id="heavy-metal" name="heavy-metal" value="heavy-metal">
+            <label for="heavy-metal">Heavy Metail</label>
+            <input type="checkbox" id="classic-rock" name="classic-rock" value="classic-rock">
+            <label for="classic rock">Classic Rock</label>
+            <input type="checkbox" id="classical" name="classical" value="classical">
+            <label for="classical">Classical</label>
+            <input type="checkbox" id="pop" name="pop" value="pop">
+            <label for="pop">Pop</label>
+            <input type="checkbox" id="rap" name="rap" value="rap">
+            <label for="rap">Rap</label>
+            <input type="checkbox" id="R&B" name="R&B" value="R&B">
+            <label for="R&B">R&B</label>
+            <input type="checkbox" id="jazz" name="jazz" value="jazz">
+            <label for="jazz">Jazz</label>
+            <input type="checkbox" id="electronic" name="electronic" value="electronic">
+            <label for="electronic">Electronic </label>
+            <input type="checkbox" id="country" name="country" value="country">
+            <label for="country">Country</label>
+        </div>
+
+        <!--THese section containst the <textarea> element-->
+        <div class="form-group">
+            <label for="usercomments">Enter adational notes about your music related opinions! </label>
+            <br>
+            <textarea name="usercomments" id="usercomments" rows="5" cols="40" placeholder="Enter your comments here!"></textarea>
+        </div>    
+        
+         <div class="form-group">
+            <input type="submit" name="submit" id="submit" value="Submit Your opinions!"> 
+        </div>
+    <footer>
+        <p>Please Contact us for more information about our musical taste</p>
+    </footer>
+    </form>
+</body>
+</html>
